@@ -3,7 +3,7 @@ const {expect} = require('chai');
 const {executerService} = require('../../../lib/services');
 const {ExceuterCommand} = require('../../../lib/models');
 
-describe('executer controller tests', () => {
+describe('executer service negative tests', () => {
   it('should return false in case command not supported', async () => {
     const exceuterCommand = new ExceuterCommand();
     exceuterCommand.command = 'invalid command';
