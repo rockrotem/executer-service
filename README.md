@@ -1,4 +1,4 @@
-# batch-service
+# executer-service
 
 ## Prerequisites
 ```bash
