@@ -1,0 +1,40 @@
+{
+  "name": "executer-service",
+  "version": "1.0.0",
+  "description": "service runs a white list commands on server",
+  "main": "app.js",
+  "scripts": {
+    "install": "",
+    "test": "npm run test:e2e && npm run test:system && npm run lint",
+    "test:e2e": "mocha --recursive --no-timeouts test/end2end/*",
+    "test:system": "mocha --recursive --no-timeouts test/system/*",
+    "lint": "./node_modules/.bin/eslint ./*.js ./test/**/*.js ./lib/**/*.js",
+    "deploy:pre": "echo 0",
+    "deploy:post": "echo 0",
+    "build": "#",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "",
+    "private": true
+  },
+  "author": "Rotem Bloom",
+  "license": "ISC",
+  "engines": {
+    "node": ">=7.8"
+  },
+  "dependencies": {
+    "eslint": "^4.16.0",
+    "express": "^4.16.2",
+    "lodash": "^4.17.4",
+    "node-cmd": "^3.0.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "chai-http": "^3.0.0",
+    "eslint-config-google": "^0.9.1",
+    "mocha": "^3.2.0"
+  }
+}
