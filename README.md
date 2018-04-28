@@ -14,6 +14,6 @@ The service testing was based on Hexagonal Architecture.
 
 To run tests just type:
 ```bash
-$ npm run test
+$ npm test
 ```
 
